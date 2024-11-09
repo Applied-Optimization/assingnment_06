@@ -22,8 +22,8 @@ The goal was to implement the following:
 In this part, the task was to implement the standard Newton's method. The function `solve(...)` in the `NewtonMethods.hh` file needed to be completed to solve the optimization problem.
 
 #### How We Solved It:
-- The **Newton direction** \( \Delta x_{\text{nt}} \) was computed by attempting to solve the system using the **inverse of the Hessian matrix**. However, directly computing the inverse is inefficient, so we used **Cholesky factorization** to decompose the Hessian matrix and solve the resulting system efficiently.
-- We utilized the **LDLT** module of the Eigen library to perform the Cholesky decomposition and solve the linear system for \( \Delta x_{\text{nt}} \).
+- The **Newton direction** $( \Delta x_{\text{nt}} )$ was computed by attempting to solve the system using the **inverse of the Hessian matrix**. However, directly computing the inverse is inefficient, so we used **Cholesky factorization** to decompose the Hessian matrix and solve the resulting system efficiently.
+- We utilized the **LDLT** module of the Eigen library to perform the Cholesky decomposition and solve the linear system for $( \Delta x_{\text{nt}} )$.
 - The function `backtracking_line_search()` from the `LineSearch.hh` file was used to ensure proper convergence of the method.
 
 
