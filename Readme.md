@@ -33,15 +33,15 @@ The next task was to handle problems where the Hessian matrix may not be positiv
 
 #### How We Solved It:
 - We implemented the function `solve_with_projected_hessian(...)` in the `NewtonMethods.hh` file to modify the Hessian matrix.
-- **Cholesky decomposition** was used, and if it failed (i.e., the matrix was not positive definite), we iterated by adding a constant \( \delta \) to the diagonal of the Hessian matrix.
-- We started with an initial value of \( \delta_0 \) based on the formula:
-  \[
+- **Cholesky decomposition** was used, and if it failed (i.e., the matrix was not positive definite), we iterated by adding a constant $( \delta )$ to the diagonal of the Hessian matrix.
+- We started with an initial value of $( \delta_0 )$ based on the formula:
+  $[
   \delta_0 = \frac{10^{-3} \cdot |\text{trace}(H)|}{n}
-  \]
-  where \( n \) is the number of variables, and the constant \( \delta \) was increased by a factor of \( \gamma \) with \( \gamma > 1 \).
-- This ensured that the modified Hessian matrix was positive definite, allowing us to solve the system for \( \Delta x_{\text{nt}} \) efficiently.
+  ]$
+  where $( n )$ is the number of variables, and the constant $( \delta )$ was increased by a factor of $( \gamma )$ with $( \gamma > 1 )$.
+- This ensured that the modified Hessian matrix was positive definite, allowing us to solve the system for $( \Delta x_{\text{nt}} )$ efficiently.
 
-- However, finding the exact delta was tricky, and I found that the value must be around \( 1 \times 10^{-1} \) in order to pass the test.
+- However, finding the exact delta was tricky, and I found that the value must be around $( 1 \times 10^{-1} )$ in order to pass the test.
 
 ### 3. **Newton Methods vs Gradient Descent (1 pt)**
 
