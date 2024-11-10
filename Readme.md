@@ -2,10 +2,10 @@
 
 # MassSpring Problem Solver - README
 
-### Participants:
-- Ahonon Gobi (Did Both Theory and Coding 100%)
-- Deep Shukla (Did Both Theory and Coding 70%)
-- Jules Odjé (Did Theory but less coding (30%))
+### Participants and Their Investment (Up to the Assistant to Assess):
+- Ahonon Gobi (Did Theory and Coding (100%))
+- Deep Shukla (Did theory and Coding (80%))
+- Jules Odjé (Did theory but less coding (30%))
 
 
 ### Programming (7 pts)
