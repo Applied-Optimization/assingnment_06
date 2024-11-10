@@ -1,11 +1,11 @@
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
 
-# MassSpring Problem Solver - README
+# Newton’s Method - README
 
 ### Participants and Their Investment (Up to the Assistant to Assess):
-- Ahonon Gobi (Did Theory and Coding (100%))
-- Deep Shukla (Did theory and Coding (80%))
-- Jules Odjé (Did theory but less coding (30%))
+- Ahonon Gobi : Full contribution to both theory and coding (100%).
+- Deep Shukla : Significant contributions to both theory and coding (80%).
+- Jules Odjé : Contributions on theory, minimal coding contributions (30%).
 
 
 ### Programming (7 pts)
